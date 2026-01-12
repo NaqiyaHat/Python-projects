@@ -1,50 +1,3 @@
-"""
-Group5-activity2.py
-
-Names:-
-
-- Mohammad Ali
-- Naqiya
-- Yaseen Gaber
-- Ahmed Ali
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Contribution:-
-
-- Yaseen Gaber ~ main() function, Doctrings ==> (25%)
-- Naqiya ~ Constants, Docstrings ==> (25%)
-- Mohammed Ali ~ Currency Functions, Docstrings ==> (25%)
-- Ahmed Ali ~ nested loops and if statements ==> (25%)
-
-Github:- 
-
-- Mohammad Ali: https://github.com/MohammadAlSubaiei/GCIS
-- Naqiya: https://github.com/naqiyahathiari/group.git
-- Yaseen Gaber: https://github.com/Yaseen-Gaber/Group_5.git
-- Ahmed Ali: https://github.com/Aah353/aah5142.git
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Description:-
-
-- This program is a simple currency converter that allows users to convert amounts between United Arab Emirates Dirham (AED), Euros (EUR), British Pounds (BRITISH), and US Dollars (DOLLAR).
-The conversion rates for each currency are defined as constants and the functions present allow the conversion process from AED to other currency and vice versa from the main().
-The user can input their choice, select a specific currency conversion, and enter the amount to be converted.
-The program then calculates and displays the converted amount. This process continues until the user exits the program.
-Additionally, the code also checks for invalid inputs such as non integer values and provides a structures and user friendly interface.
-"""
-
-# --------------------------------------------------------------------------------------------------------------------------------------
-
-"""
-In Python, constants are used to store values that are meant to remain unchanged throughout the execution of a program.
-Constants help in organizing the code in a way that is both efficient for the programmer and beneficial for the program's stability and readability.
-The exchange rate changes due to the constants being multiplied by the amount of money you are trying to exchange.
-The program picks up that there is a set constant that should be used in all valid positions.
-|
-The float values are based upon current currency rates
-"""
 
 AED_TO_EUR = 0.25       # constant
 AED_TO_BRITISH = 0.22   # constant
@@ -221,3 +174,4 @@ if __name__ == "__main__":
     main()
 
 #complete
+
