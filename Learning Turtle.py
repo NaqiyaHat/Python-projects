@@ -1,34 +1,6 @@
 # Prototype 1 ==> Hexagon: red | Circle: green | Square: blue | border-color: yellow
 # Prototype 2 ==> Hexagon: blue | Circle: purple | Square: yellow | border-color: red
 
-'''
-Group 5:
-
-1. Mohammad Ali
-2. Naqiya
-3. Yaseen Gaber
-
-Github Links:
-
-https://github.com/MohammadAlSubaiei/GCIS/upload/master
-https://github.com/naqiyahathiari/group.git
-https://github.com/Yaseen-Gaber/Group_5.git
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Ctrl + Shift + V: [for pasting in MS VS Code] <--- Prototype 1 & Prototype 2
-|
-red
-green
-blue
-yellow
-&
-blue
-purple
-yellow
-red
-'''
-
 import turtle
 
 turtle.speed(1) # 0 ==> fastest (No_Animation) | 1 ==> slowest (Animation) | 6 ==> Normal (default turtle speed)
@@ -203,3 +175,4 @@ def main():
 
 main()
 #completed
+
