@@ -45,14 +45,6 @@ Lastly, the 'analyze_data' function updates the CSV file with the sorted data an
 - Finally, 'visualize_data' function checks the selected column, processes the data, and displays it using asterisks...
 The function gracefully handles non-numeric values and relies on robust file handling for accurate visualization.
 
-# Github:-
-
-- Mohammad Ali: https://github.com/MohammadAlSubaiei/GCIS
-- Naqiya: https://github.com/naqiyahathiari/group.git
-- Yaseen Gaber: https://github.com/Yaseen-Gaber/Group_5.git
-- Ahmed Ali: https://github.com/Aah353/aah5142.git
-"""
-
 # csv module is imported to ease the use of 'comma separated value' files
 import csv
 
@@ -109,65 +101,6 @@ The replacement process is implemented as follows:-
 Upon completion, it prints the updated table which includes the empty cells that are replaced.
 This function makes use of file handling consistently to perform the algorithm tasks exclusively.
         '''
-        # check if the entered input is either 'Price' or 'Units sold'
-        if COLUMN_NAME == "Price" or COLUMN_NAME == "Units sold":
-            with open(csv_file, 'r') as file:
-                reader = csv.reader(file)
-                # Skip the header row
-                next(reader)
-                if COLUMN_NAME == "Price":
-                    # print the index of the column. helpful info
-                    print(f"\nColumn '{COLUMN_NAME}' found at index 2.")
-                elif COLUMN_NAME == "Units sold":
-                    # print the index of the column. helpful info
-                    print(f"\nColumn '{COLUMN_NAME}' found at index 3.")
-
-                # initialize variables for implementation of the ALGORITHM
-                empty_space = ' '
-                replacement_count = 0
-                # check if the selected column is 'Price'
-                if COLUMN_NAME == "Price":
-                    # create the list that stores the array
-                    price_values = []
-                    # Iterate over the rows of the 'reader' object
-                    for row in reader:
-                        # add the contents of 'Price' column to the list 
-                        price_values.append(row[2])
-                    # Print the value in the Price column (index 2)
-                    print("\nStored data:", price_values)
-                    # check if 'price_values' list is NOT empty
-                    if price_values:
-                        # convert the first value in the list to integer and store that integer into a varaible called 'minimum_price'
-                        minimum_price = int(price_values[0])
-                        # Iterate over the 'price_values' list starting from the second element/index/string
-                        for value in price_values[1:]:
-                            # check if the 'value' in the for loop does not equal an empty space (' ')
-                            if value != empty_space:
-                                try:
-                                    # convert each value to Type 'int' and store it to 'numeric_value' variable
-                                    numeric_value = int(value)
-                                    # compare 'numeric_value' in each iteration to the first value in the list
-                                    if numeric_value < minimum_price:
-                                        # if it's less than, then assign (replace) the number to the 'minimum_price' (first value) and update it
-                                        minimum_price = numeric_value
-                                # if there's a non-numeric value in the column selected, it's skipped using 'continue'
-                                except ValueError:
-                                    continue
-                        # print the found minimum value/number/integer from the list onto the screen
-                        print("\nMinimum found:", minimum_price)
-
-                    # Iterate over the length of the 'price_values' list to find the empty space and replace it with the found minimum
-                    for i in range(len(price_values)):
-                        # if the index of 'price_values' is an empty space and the number of cells in that row does not exceed (less than or equal to) 8...
-                        if price_values[i] == empty_space and replacement_count <= 8:
-                            # then, assign (replace) that index to the 'minimum_price' value of Type 'str'
-                            price_values[i] = str(minimum_price)
-                            # increment the counter by one during each iteration
-                            replacement_count += 1
-                    # print the replaced data onto the screen
-                    print("\nReplaced data:", price_values)
-                    
-                    """
 file.seek(0) is used to move the file cursor (the position from where the next read or write operation will occur) to the beginning of the file before iterating over the file contents again.
 
 Without file.seek(0), if you try to read the file again without closing and reopening it, you'll be at the end of the file.
@@ -1190,3 +1123,4 @@ after that it prints the remaining options for the user to proceed with the prog
 
 if __name__ == "__main__":
     main()
+
